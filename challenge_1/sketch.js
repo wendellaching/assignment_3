@@ -1,18 +1,27 @@
+// a simple p5 sketch that demonstrates for loops
+
 function setup() {
-	// create a place to draw
-	createCanvas(640, 360);
-	noStroke();
-	noLoop();
+	createCanvas(640, 480);
+	stroke(255);
 }
 
 function draw() {
-	// clear the background
-	background(50, 50, 150);
+	background(50, 50, 50);
 
-	// set a fill color
-	fill(255, 255, 255);
+	for (var y = 0; y < 1; y++) {
+		if ( y === 4){
+			fill(100, 100, 255);
+		} else {
+			color('hsl(0, 100%, 50%)');
+            fill('hsl(0, 100%, 50%)');
+            rect(1, 201, 50, 50);
+            color('hsla(0, 100%, 50%, 0.5)');
+            fill('hsla(0, 100%, 50%, 0.5)');
 
-	// draw the ellipse
-	var diameter = random(100, 200);
-	ellipse(320, 180, diameter, diameter);
+		}
+
+	    	for (var x = 0; x < 10; x++) {
+			rect(x * 65.5, y+200 ,50, 50);
+		}
+	}
 }
