@@ -18,9 +18,9 @@ function draw() {
 						line(0, mouseY, 640, mouseY);
 				//ellipse
 				if (mouseIsPressed){
-						background (50,50,100);
+						fill (50,50,100);
 				}		else {
-						background (150,0,0);
+						fill (150,0,0);
 				}			ellipse(mouseX, mouseY,35,35);
 
 
