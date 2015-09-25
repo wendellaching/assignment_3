@@ -14,6 +14,7 @@ function draw() {
 				}
 				// lines
 						line(mouseX,0,mouseX,480);
+						line(0, mouseX, 640, mouseX);
 
 
 				}
