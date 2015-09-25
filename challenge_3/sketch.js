@@ -17,7 +17,11 @@ function draw() {
 						line(mouseX,0,mouseX,480);
 						line(0, mouseY, 640, mouseY);
 				//ellipse
-					ellipse(mouseX, mouseY,35,35);
+				if (mouseIsPressed){
+						background (50,50,100);
+				}		else {
+						background (150,0,0);
+				}			ellipse(mouseX, mouseY,35,35);
 
 
 
