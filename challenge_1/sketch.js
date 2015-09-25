@@ -14,7 +14,7 @@ function draw() {
 		} else {
 			color('hsl(0, 100%, 50%)');
             fill('hsl(0, 100%, 50%)');
-            rect(1, 201, 50, 50);
+            rect(590, 201, 50, 50);
             color('hsla(0, 100%, 50%, 0.5)');
             fill('hsla(0, 100%, 50%, 0.5)');
 
