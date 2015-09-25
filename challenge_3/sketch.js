@@ -1,7 +1,8 @@
 function setup() {
 	// create a place to draw
 	createCanvas(640, 480);
-	strokeWeight(.5);
+	stroke(255,255,255);
+	strokeWeight(1);
 }
 
 function draw() {
@@ -12,7 +13,7 @@ function draw() {
 						background(150,0,0);
 				}
 				// lines
-						line(mouseX,0,mouseX,100);
+						line(mouseX,0,mouseX,480);
 
 
 				}
