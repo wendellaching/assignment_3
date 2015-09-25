@@ -3,16 +3,16 @@
 
 var ballX = 200;
 var ballY = 100;
-var ballSpeedX = 5;
-var ballSpeedY = 5;
+var ballSpeedX = 4;
+var ballSpeedY = 4;
 var ballA = 100;
 var ballB = 200;
-var ballSpeedA = 5;
-var ballSpeedB = 5;
+var ballSpeedA = 2.5;
+var ballSpeedB = 2.5;
 
 function setup() {
 	createCanvas(640, 480);
-	background (0,0,0);
+	// background (0,0,0);
 }
 
 function draw() {
@@ -52,8 +52,11 @@ function draw() {
 	if (ballB < 0) {
 		ballSpeedB = -ballSpeedB;
 	}
-
+	noStroke();
+	background(0);
 	fill(255,255,255);
+
+	//
 	ellipse(ballX, ballY, 50, 50);
 	ellipse (ballA, ballB, 50, 50);
 }
