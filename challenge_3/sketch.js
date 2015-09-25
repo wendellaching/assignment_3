@@ -3,6 +3,7 @@ function setup() {
 	createCanvas(640, 480);
 	stroke(255,255,255);
 	strokeWeight(1);
+	noFill();
 }
 
 function draw() {
@@ -14,7 +15,10 @@ function draw() {
 				}
 				// lines
 						line(mouseX,0,mouseX,480);
-						line(0, mouseX, 640, mouseX);
+						line(0, mouseY, 640, mouseY);
+				//ellipse
+					ellipse(mouseX, mouseY,30,30);
+
 
 
 				}
