@@ -27,22 +27,25 @@ function draw() {
 	if (ballX > 640) {
 		ballSpeedX = -ballSpeedX;
 	}
+	if ballSpeedA = -ballSpeedA;
 
 	// bottom
 	if (ballY > 480) {
 		ballSpeedY = -ballSpeedY;
 	}
+	if ballSpeedB = -ballSpeedB;
 
 	// left
 	if (ballX < 0) {
 		ballSpeedX = -ballSpeedX;
 	}
+	if ballSpeedA = -ballSpeedA;
 
 	// top
 	if (ballY < 0) {
 		ballSpeedY = -ballSpeedY;
 	}
-
+	if ballSpeedB = -ballSpeedB;
 
 	background(0,0,0);
 	ellipse(ballX, ballY, 50, 50);
