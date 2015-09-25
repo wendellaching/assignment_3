@@ -1,22 +1,49 @@
+// a simple p5 sketch demonstrating animation
+
+
 var ballX = 200;
 var ballY = 100;
 var ballSpeedX = 5;
 var ballSpeedY = 5;
 
+var ballA = -200;
+var ballB = -100;
+var ballSpeedA = -5;
+var ballSpeedB = -5;
+
 function setup() {
 	createCanvas(640, 480);
-	noStroke();
-	noLoop();
 }
 
 function draw() {
-	// clear the background
-	background(0, 0, 0);
+	// change position
+	ballX = ballX + ballSpeedX;
+	ballY = ballY + ballSpeedY;
 
-	// set a fill color
-	fill(255, 255, 255);
+	// don't let the ball go to far
 
-	// draw the ellipse
-	var diameter = random(50, 50);
-	ellipse(320, 180, diameter, diameter);
+	// right
+	if (ballX > width) {
+		ballSpeedX = -ballSpeedX;
+	}
+
+	// bottom
+	if (ballY > height) {
+		ballSpeedY = -ballSpeedY;
+	}
+
+	// left
+	if (ballX < 0) {
+		ballSpeedX = -ballSpeedX;
+	}
+
+	// top
+	if (ballY < 0) {
+		ballSpeedY = -ballSpeedY;
+	}
+
+
+	background(0,0,0);
+	ellipse(ballX, ballY, 50, 50);
+
 }
