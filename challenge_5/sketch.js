@@ -1,18 +1,17 @@
+// a simple p5 sketch that draws a cloud thing
+// at the location of the mouse cursor
+
 function setup() {
-	// create a place to draw
-	createCanvas(640, 360);
-	noStroke();
-	noLoop();
+	createCanvas(640, 480);
+
 }
 
 function draw() {
-	// clear the background
-	background(150, 150, 50);
-
-	// set a fill color
+	background(0, 0, 0);
+	noStroke();
 	fill(255, 255, 255);
 
-	// draw the ellipse
-	var diameter = random(100, 200);
-	ellipse(320, 180, diameter, diameter);
+	for (var i = 0; i < 1; i++){
+		ellipse(mouseX+random(0, 10), mouseY+random(0, 10), 50, 50);
+	}
 }
