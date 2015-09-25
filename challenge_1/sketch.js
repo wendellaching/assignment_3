@@ -42,5 +42,5 @@ function draw() {
 	    	for (var x = 0; x < 10; x++) {
 			rect(x * 65.5, y+200 ,50, 50);
 		}
-	
+
 }
