@@ -3,15 +3,16 @@
 
 var ballX = 200;
 var ballY = 100;
-var ballSpeedX = 4;
-var ballSpeedY = 4;
+var ballSpeedX = 5;
+var ballSpeedY = 5;
 var ballA = 100;
 var ballB = 200;
-var ballSpeedA = 4;
-var ballSpeedB = 4;
+var ballSpeedA = 5;
+var ballSpeedB = 5;
 
 function setup() {
 	createCanvas(640, 480);
+	background (0,0,0);
 }
 
 function draw() {
@@ -25,30 +26,34 @@ function draw() {
 
 	// right
 	if (ballX > 640) {
-		ballSpeedX = -ballSpeedX;
+			ballSpeedX = -ballSpeedX;
 	}
-	if ballSpeedA = -ballSpeedA;
-
+	if (ballA > 640) {
+			ballSpeedA = -ballSpeedA;
+	}
 	// bottom
 	if (ballY > 480) {
-		ballSpeedY = -ballSpeedY;
+			ballSpeedY = -ballSpeedY;
 	}
-	if ballSpeedB = -ballSpeedB;
-
+	if (ballB > 480) {
+	 		ballSpeedB = -ballSpeedB;
+	}
 	// left
 	if (ballX < 0) {
-		ballSpeedX = -ballSpeedX;
+			ballSpeedX = -ballSpeedX;
 	}
-	if ballSpeedA = -ballSpeedA;
-
+	if (ballA < 0) {
+			ballSpeedA = -ballSpeedA;
+	}
 	// top
 	if (ballY < 0) {
-		ballSpeedY = -ballSpeedY;
+			ballSpeedY = -ballSpeedY;
 	}
-	if ballSpeedB = -ballSpeedB;
+	if (ballB < 0) {
+		ballSpeedB = -ballSpeedB;
+	}
 
-	background(0,0,0);
+	fill(255,255,255);
 	ellipse(ballX, ballY, 50, 50);
 	ellipse (ballA, ballB, 50, 50);
-
 }
