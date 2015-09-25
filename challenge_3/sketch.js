@@ -17,7 +17,7 @@ function draw() {
 						line(mouseX,0,mouseX,480);
 						line(0, mouseY, 640, mouseY);
 				//ellipse
-					ellipse(mouseX, mouseY,30,30);
+					ellipse(mouseX, mouseY,35,35);
 
 
 
