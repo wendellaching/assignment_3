@@ -3,13 +3,12 @@
 
 var ballX = 200;
 var ballY = 100;
-var ballSpeedX = 5;
-var ballSpeedY = 5;
-
-var ballA = -200;
-var ballB = -100;
-var ballSpeedA = -5;
-var ballSpeedB = -5;
+var ballSpeedX = 4;
+var ballSpeedY = 4;
+var ballA = 100;
+var ballB = 200;
+var ballSpeedA = 4;
+var ballSpeedB = 4;
 
 function setup() {
 	createCanvas(640, 480);
@@ -19,16 +18,18 @@ function draw() {
 	// change position
 	ballX = ballX + ballSpeedX;
 	ballY = ballY + ballSpeedY;
+	ballA = ballA + ballSpeedA;
+	ballB = ballB + ballSpeedB;
 
 	// don't let the ball go to far
 
 	// right
-	if (ballX > width) {
+	if (ballX > 640) {
 		ballSpeedX = -ballSpeedX;
 	}
 
 	// bottom
-	if (ballY > height) {
+	if (ballY > 480) {
 		ballSpeedY = -ballSpeedY;
 	}
 
@@ -45,5 +46,6 @@ function draw() {
 
 	background(0,0,0);
 	ellipse(ballX, ballY, 50, 50);
+	ellipse (ballA, ballB, 50, 50);
 
 }
